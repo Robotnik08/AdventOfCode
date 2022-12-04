@@ -25,7 +25,7 @@ bool evaluate2 (string s) {
     int secondstart = stoi(secondperson.substr(0, secondperson.find("-")));
     int secondend = stoi(secondperson.substr(secondperson.find("-") + 1, secondperson.length()));
 
-    return (firststart >= secondstart && firststart <= secondend) || (firstend <= secondend && firstend >= secondstart) || (secondstart >= firststart && secondstart <= firstend) || (secondend <= firstend && secondend >= firststart);
+    return (firstend >= secondstart && firststart <= secondend);
 }
 
 int main () {
@@ -58,6 +58,6 @@ int main () {
     }
     cout << "Result 1: " << sum1 << '\n';
     cout << "Result 2: " << sum2 << '\n';
-    system("PAUSE");
+    
     return 0;
 }
