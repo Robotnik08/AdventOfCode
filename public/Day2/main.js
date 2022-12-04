@@ -5,14 +5,15 @@ fetch("input.txt")
     const result = r.split('\r\n');
     let score = 0;
     for (let i in result) {
-        score += eval(result[i]);
+        score += evaluate(result[i]);
     }
     console.log(score);
+    document.body.innerHTML = `Result: ${score}`;
 }
 );
 console.timeEnd('time');
 
-function eval (game) {
+function evaluate (game) {
     let opp = game.charAt(0);
     let you = game.charAt(2);
     switch(opp) {

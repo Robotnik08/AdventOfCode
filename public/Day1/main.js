@@ -25,6 +25,7 @@ fetch("input.txt")
         }
     }
     console.log(highest.c + second.c + third.c);
+    document.body.innerHTML = `Result: ${highest.c + second.c + third.c}`;
 }
 );
 console.timeEnd('time');
