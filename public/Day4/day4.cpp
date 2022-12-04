@@ -43,6 +43,7 @@ int main () {
     }
     else {
         cout << "Error, Input not found.\n";
+        system("PAUSE");
         return 0;
     }
 
@@ -57,5 +58,6 @@ int main () {
     }
     cout << "Result 1: " << sum1 << '\n';
     cout << "Result 2: " << sum2 << '\n';
+    system("PAUSE");
     return 0;
 }
